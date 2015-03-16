@@ -1,0 +1,73 @@
+.tiny-calendar {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
+  overflow: visible;
+  box-sizing: border-box;
+  background-color: transparent;
+  position: relative;
+}
+.tiny-calendar svg,
+.tiny-calendar canvas {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
+}
+.tiny-calendar .day-names {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.tiny-calendar .day-name,
+.tiny-calendar .month-name {
+  color: #666;
+  font-size: 9px;
+  font-weight: 300;
+  line-height: 1;
+}
+.tiny-calendar .day-name {
+  width: 100%;
+  text-align: center;
+}
+.tiny-calendar .month-names {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.tiny-calendar .month-name {
+  position: absolute;
+  display: inline-block;
+  text-align: left;
+}
+.tiny-calendar .month-name-today {
+  color: #000;
+  font-weight: bold;
+}
+.tiny-calendar .tycal-tooltip {
+  box-sizing: border-box;
+  display: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  z-index: 999;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+}

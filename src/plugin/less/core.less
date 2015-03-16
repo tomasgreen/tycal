@@ -1,0 +1,94 @@
+@tickTextFontSize: 12px;
+@defaultDash: 2, 2;
+
+.no-touch-selection() {
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+@aqua:  #7FDBFF;
+@blue:  #0074D9;
+@navy:  #001F3F;
+@teal:  #39CCCC;
+@green: #2ECC40;
+@olive: #3D9970;
+@lime:  #01FF70;
+
+// Warm
+
+@yellow:  #FFDC00;
+@orange:  #FF851B;
+@red:     #FF4136;
+@fuchsia: #F012BE;
+@purple:  #B10DC9;
+@maroon:  #85144B;
+
+// Gray Scale
+
+@white:  #fff;
+@silver: #ddd;
+@gray:   #aaa;
+@black:  #111;
+
+@base: #f1f1f1;
+
+.tiny-calendar {
+	svg, canvas {
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+		font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
+	}
+	.no-touch-selection();
+	font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
+	overflow: visible;
+	box-sizing: border-box;
+	background-color: transparent;
+	position: relative;
+	.day-names{
+		box-sizing: border-box;
+		padding: 0;
+		margin:0;
+		display: flex;
+		position: absolute;
+		left: 0px;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.day-name,.month-name {
+		color: #666;
+		font-size: 9px;
+		font-weight: 300;
+		line-height: 1;
+	}
+	.day-name{
+		width: 100%;
+		text-align: center;
+	}
+	.month-names{
+		box-sizing: border-box;
+		padding: 0;
+		margin:0;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+	.month-name {
+		position: absolute;
+		display: inline-block;
+		text-align: left;
+	}
+	.month-name-today {
+		color: #000;
+		font-weight: bold;
+	}
+	.tycal-tooltip {
+		box-sizing: border-box;
+		display: none;
+		color: #fff;
+		padding: 10px;
+		border-radius: 3px;
+		z-index: 999;
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}
